@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIMeR Lab — Seattle Pacific University</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER / NAV ═══════════════════════════ -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" onclick="showSection('home')">
+        <span class="logo-accent">LIMeR</span>
+        <span class="logo-sub">Lab</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#" class="nav-link" data-section="members">Members</a></li>
+          <li><a href="#" class="nav-link" data-section="research">Research</a></li>
+          <li><a href="#" class="nav-link" data-section="courses">Courses</a></li>
+          <li><a href="#" class="nav-link" data-section="publications">Publications</a></li>
+          <li><a href="#" class="nav-link" data-section="facility">Facility</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ MAIN CONTENT ═══════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ─── HOME ─── -->
+    <section id="home" class="page-section active">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-bg">
+          <div class="hero-grid"></div>
+          <div class="hero-orb orb-1"></div>
+          <div class="hero-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-kicker">Seattle Pacific University</p>
+          <h1 class="hero-title">
+            Welcome to <br />
+            <span class="brand-word">
+              <em class="accent">L</em>earning,
+              <em class="accent">I</em>ntelligence,
+              <em class="accent">Me</em>chatronics, and
+              <em class="accent">R</em>obotics
+            </span>
+            <span class="hero-lab-badge">(<span class="accent">LIMeR</span>) Lab</span>
+          </h1>
+          <p class="hero-sub">Advancing intelligent systems through optimal control, robotics, and mechatronics research at SPU.</p>
+          <div class="hero-cta">
+            <button class="btn-primary" onclick="showSection('research')">Explore Research</button>
+            <button class="btn-outline" onclick="showSection('members')">Meet the Team</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hex-grid">
+            <div class="hex"><span>🤖</span></div>
+            <div class="hex"><span>⚙️</span></div>
+            <div class="hex"><span>🧠</span></div>
+            <div class="hex"><span>📡</span></div>
+            <div class="hex"><span>🔬</span></div>
+            <div class="hex"><span>💡</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Available Positions -->
+      <div class="content-block">
+        <div class="section-label">Opportunities</div>
+        <h2 class="section-heading">Available Positions</h2>
+        <div class="positions-grid">
+          <div class="position-card">
+            <div class="pos-icon">🎓</div>
+            <h3>Undergraduate Research Assistant</h3>
+            <p>Join our team and gain hands-on experience in robotics, control systems, and mechatronics research. Open to SPU undergraduates from engineering and CS.</p>
+            <span class="pos-tag">Open</span>
+          </div>
+          <div class="position-card">
+            <div class="pos-icon">🔬</div>
+            <h3>Graduate Researcher</h3>
+            <p>We welcome motivated graduate students interested in intelligent systems, optimal control, and autonomous robotics. Strong programming background preferred.</p>
+            <span class="pos-tag">Open</span>
+          </div>
+          <div class="position-card">
+            <div class="pos-icon">🤝</div>
+            <h3>Visiting Collaborator</h3>
+            <p>We collaborate with researchers from other institutions and industry partners on projects in AI, mechatronics, and applied robotics.</p>
+            <span class="pos-tag">By Inquiry</span>
+          </div>
+        </div>
+        <p class="positions-cta">Interested? Email <a href="mailto:limer@spu.edu" class="text-link">limer@spu.edu</a> with your CV and a brief statement of interest.</p>
+      </div>
+
+      <!-- News -->
+      <div class="content-block alt-bg">
+        <div class="section-label">Latest Updates</div>
+        <h2 class="section-heading">News</h2>
+        <div class="news-list">
+          <article class="news-item">
+            <div class="news-date">
+              <span class="news-month">Jun</span>
+              <span class="news-year">2025</span>
+            </div>
+            <div class="news-body">
+              <h3>New Paper Accepted</h3>
+              <p>Our latest research on robust control design for autonomous systems has been accepted for publication. Details coming soon.</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-date">
+              <span class="news-month">Apr</span>
+              <span class="news-year">2025</span>
+            </div>
+            <div class="news-body">
+              <h3>Lab Equipment Upgrade</h3>
+              <p>The LIMeR Lab has received new mechatronics hardware to support expanded experimental capabilities in our facility.</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="news-date">
+              <span class="news-month">Jan</span>
+              <span class="news-year">2025</span>
+            </div>
+            <div class="news-body">
+              <h3>New Research Assistants Join the Lab</h3>
+              <p>We welcome our newest undergraduate research assistants to the LIMeR Lab for the Spring 2025 semester.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── MEMBERS ─── -->
+    <section id="members" class="page-section">
+      <div class="page-hero">
+        <p class="hero-kicker">Our Team</p>
+        <h1>Members</h1>
+        <p class="page-sub">Meet the researchers driving innovation at LIMeR Lab.</p>
+      </div>
+
+      <div class="content-block">
+        <div class="section-label">Principal Investigator</div>
+        <h2 class="section-heading">PI</h2>
+        <div class="pi-card">
+          <div class="pi-avatar">JL</div>
+          <div class="pi-info">
+            <h3>Jihoon Lim, Ph.D.</h3>
+            <p class="pi-title">Principal Investigator &amp; Lab Director</p>
+            <p class="pi-bio">Optimal and Robust Control Design, Robotics, and Mechatronics. Dr. Lim leads the LIMeR Lab's research agenda at Seattle Pacific University, focusing on intelligent control systems and autonomous robotic platforms.</p>
+            <div class="pi-links">
+              <a href="#" class="pill-link">📧 Contact</a>
+              <a href="#" class="pill-link">🔗 Profile</a>
+              <a href="#" class="pill-link">📄 CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block alt-bg">
+        <div class="section-label">Students</div>
+        <h2 class="section-heading">Undergraduate Research Assistants</h2>
+        <div class="members-grid">
+          <div class="member-card">
+            <div class="member-avatar">CT</div>
+            <div class="member-info">
+              <h3>Cuong (Calvin) Tsan</h3>
+              <p class="member-field">Data Science</p>
+              <p class="member-focus">Undergraduate Research Assistant</p>
+            </div>
+          </div>
+          <div class="member-card">
+            <div class="member-avatar">SF</div>
+            <div class="member-info">
+              <h3>Shukrani Fatuma</h3>
+              <p class="member-field">Electrical Engineering</p>
+              <p class="member-focus">Undergraduate Research Assistant</p>
+            </div>
+          </div>
+          <div class="member-card add-member">
+            <div class="member-avatar add-icon">+</div>
+            <div class="member-info">
+              <h3>Join the Team</h3>
+              <p class="member-field">Open Position</p>
+              <p class="member-focus">See available positions on the Home page</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── RESEARCH ─── -->
+    <section id="research" class="page-section">
+      <div class="page-hero">
+        <p class="hero-kicker">What We Do</p>
+        <h1>Research</h1>
+        <p class="page-sub">Exploring the frontier of intelligent systems and autonomous machines.</p>
+      </div>
+      <div class="content-block">
+        <div class="research-grid">
+          <div class="research-card">
+            <div class="research-icon">🎯</div>
+            <h3>Optimal Control Design</h3>
+            <p>Developing mathematically rigorous control strategies that optimize performance metrics for dynamic systems, including model predictive control and linear-quadratic regulators.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🛡️</div>
+            <h3>Robust Control</h3>
+            <p>Designing controllers that maintain stability and performance under system uncertainties and external disturbances — critical for real-world robotics deployment.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">🤖</div>
+            <h3>Robotics</h3>
+            <p>Building and programming autonomous robotic platforms, from motion planning and kinematics to perception-action loops and human-robot interaction.</p>
+          </div>
+          <div class="research-card">
+            <div class="research-icon">⚙️</div>
+            <h3>Mechatronics</h3>
+            <p>Integrating mechanical, electrical, and computational systems to create smart machines — bridging the physical and digital worlds through embedded sensing and actuation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── COURSES ─── -->
+    <section id="courses" class="page-section">
+      <div class="page-hero">
+        <p class="hero-kicker">Education</p>
+        <h1>Courses</h1>
+        <p class="page-sub">Courses taught and supported by LIMeR Lab faculty.</p>
+      </div>
+      <div class="content-block">
+        <div class="courses-list">
+          <div class="course-card">
+            <span class="course-code">EGR 301</span>
+            <div class="course-info">
+              <h3>Control Systems</h3>
+              <p>Classical and modern control theory. Topics include feedback systems, stability analysis, frequency-domain methods, and PID control design.</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <span class="course-code">EGR 415</span>
+            <div class="course-info">
+              <h3>Mechatronics</h3>
+              <p>Integration of mechanical design, electronics, sensors, actuators, and microcontrollers. Lab-intensive with hands-on projects.</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <span class="course-code">EGR 450</span>
+            <div class="course-info">
+              <h3>Robotics Engineering</h3>
+              <p>Kinematics, dynamics, path planning, and robot programming. Students build and program robotic platforms throughout the term.</p>
+            </div>
+          </div>
+          <div class="course-card">
+            <span class="course-code">EGR 480</span>
+            <div class="course-info">
+              <h3>Advanced Control Design</h3>
+              <p>State-space methods, optimal control (LQR/LQG), robust control (H∞), and model predictive control for advanced engineering applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PUBLICATIONS ─── -->
+    <section id="publications" class="page-section">
+      <div class="page-hero">
+        <p class="hero-kicker">Our Work</p>
+        <h1>Publications</h1>
+        <p class="page-sub">Peer-reviewed research from the LIMeR Lab.</p>
+      </div>
+      <div class="content-block">
+        <div class="pub-filters">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Journal Articles</button>
+          <button class="filter-btn">Conference Papers</button>
+        </div>
+        <div class="pub-list">
+          <div class="pub-item">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+              <h3>Robust Control Synthesis for Autonomous Robotic Systems Under Parametric Uncertainty</h3>
+              <p class="pub-authors">J. Lim, C. Tsan, S. Fatuma</p>
+              <p class="pub-venue">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)</p>
+              <div class="pub-links">
+                <a href="#" class="pill-link">📄 PDF</a>
+                <a href="#" class="pill-link">🔗 DOI</a>
+              </div>
+            </div>
+          </div>
+          <div class="pub-item">
+            <span class="pub-year">2024</span>
+            <div class="pub-body">
+              <h3>Optimal Trajectory Planning for Mechatronic Systems with State Constraints</h3>
+              <p class="pub-authors">J. Lim</p>
+              <p class="pub-venue">IEEE Transactions on Control Systems Technology</p>
+              <div class="pub-links">
+                <a href="#" class="pill-link">📄 PDF</a>
+                <a href="#" class="pill-link">🔗 DOI</a>
+              </div>
+            </div>
+          </div>
+          <div class="pub-item">
+            <span class="pub-year">2023</span>
+            <div class="pub-body">
+              <h3>Model Predictive Control for Multi-Agent Robotic Coordination</h3>
+              <p class="pub-authors">J. Lim</p>
+              <p class="pub-venue">American Control Conference (ACC)</p>
+              <div class="pub-links">
+                <a href="#" class="pill-link">📄 PDF</a>
+                <a href="#" class="pill-link">🔗 DOI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FACILITY ─── -->
+    <section id="facility" class="page-section">
+      <div class="page-hero">
+        <p class="hero-kicker">Our Space</p>
+        <h1>Facility</h1>
+        <p class="page-sub">State-of-the-art equipment for cutting-edge robotics and mechatronics research.</p>
+      </div>
+      <div class="content-block">
+        <div class="facility-grid">
+          <div class="facility-card">
+            <div class="facility-icon">🦾</div>
+            <h3>Robotic Platforms</h3>
+            <p>Multiple autonomous and semi-autonomous robotic systems for experimentation in motion planning, manipulation, and multi-agent coordination.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon">💻</div>
+            <h3>Computing Infrastructure</h3>
+            <p>High-performance workstations and GPU servers for simulation, machine learning, and real-time control algorithm development.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon">🔧</div>
+            <h3>Electronics &amp; Prototyping</h3>
+            <p>Fully equipped electronics bench with oscilloscopes, signal generators, soldering stations, and 3D printing for rapid prototyping.</p>
+          </div>
+          <div class="facility-card">
+            <div class="facility-icon">📡</div>
+            <h3>Sensing &amp; Actuation</h3>
+            <p>IMUs, LiDAR, cameras, force/torque sensors, and a range of actuators to support physical robot experiments and data collection.</p>
+          </div>
+        </div>
+        <div class="facility-location">
+          <div class="location-icon">📍</div>
+          <div>
+            <h3>Location</h3>
+            <p>LIMeR Lab is located on the campus of <strong>Seattle Pacific University</strong>, Seattle, WA.<br />
+            For lab tours or visit inquiries, please contact us at <a href="mailto:limer@spu.edu" class="text-link">limer@spu.edu</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-accent">LIMeR</span> Lab
+        <p>Learning, Intelligence, Mechatronics, and Robotics</p>
+        <p>Seattle Pacific University</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#" onclick="showSection('home')">Home</a></li>
+          <li><a href="#" onclick="showSection('members')">Members</a></li>
+          <li><a href="#" onclick="showSection('research')">Research</a></li>
+          <li><a href="#" onclick="showSection('courses')">Courses</a></li>
+          <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+          <li><a href="#" onclick="showSection('facility')">Facility</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p>📧 <a href="mailto:limer@spu.edu" class="text-link">limer@spu.edu</a></p>
+        <p>📍 Seattle, WA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LIMeR Lab, Seattle Pacific University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
