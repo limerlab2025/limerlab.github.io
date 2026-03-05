@@ -74,7 +74,7 @@ git push -u origin main
 5. Click **Save**
 
 Your site will be live at:  
-`https://limerlab.github.io/limer-lab/`
+`https://limerlab2025.github.io/limerlab.github.io/`
 
 *(It may take 1–2 minutes to build on first deploy.)*
 
